@@ -1,0 +1,11 @@
+<h1>My Paris Flats</h1>
+<ul>
+  <% @flats.each do |flat| %>
+    <li>
+      <!-- flats/157 -->
+      <!-- flats/:id -->
+      <!-- flat_path(157) -->
+      <%= link_to flat['name'], flat_path(flat['id']) %>
+    </li>
+  <% end %>
+</ul>
