@@ -13,7 +13,7 @@ class FlatsController < ApplicationController
     @id = params[:id].to_i
 
 
-    @flat = @flats.select {|flat| flat["id"] == @id }
+    @flat = @flats.select {|flat| flat["id"] == @id }.first
   end
 
 end

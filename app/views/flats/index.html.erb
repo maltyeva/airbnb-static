@@ -4,11 +4,8 @@
   <p><%= flat["price"] %> - <%= flat["priceCurrency"]%></p>
   <!-- link to the show page -->
   <%= link_to flat["name"], flat_path(flat["id"]) %>
+  <%= link_to flat_path(flat["id"]) do %>
+    <img src="<%= flat["imageUrl"] %>" width="200">
+  <% end %>
 <% end %>
-<!-- id: 145,
-name: "Charm at the Steps of the Sacre Coeur/Montmartre",
-imageUrl: "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg",
-price: 164,
-priceCurrency: "EUR",
-lat: 48.884211,
-lng: 2.34689 -->
+<!-- link_to "anchor text", path -->
